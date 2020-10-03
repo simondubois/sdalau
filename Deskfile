@@ -1,0 +1,15 @@
+#/bin/bash
+
+export PATH=$PATH:./vendor/bin
+export HISTFILE=$HOME/.bash_history_sdalau
+touch $HISTFILE
+
+function dev-install {
+    # git clone git@github.com:simondubois/sdalau.git ./
+}
+
+function dev-check {
+}
+
+function dev-run {
+}
