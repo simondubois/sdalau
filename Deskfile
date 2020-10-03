@@ -12,6 +12,7 @@ function dev-install {
 function dev-check {
     phpmd .
     phpcs .
+    phpstan analyse
 }
 
 function dev-run {
