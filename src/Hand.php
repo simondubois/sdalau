@@ -13,12 +13,12 @@ class Hand
      */
     protected array $dices = [];
 
-    public function __construct(int $successDices)
+    public function __construct(int $successDices, bool $weary)
     {
         $this->dices[] = new FateDice();
 
         for ($count = 0; $count < $successDices; $count++) {
-            $this->dices[] = new SuccessDice();
+            $this->dices[] = new SuccessDice($weary);
         }
     }
 

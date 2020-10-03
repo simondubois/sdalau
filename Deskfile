@@ -17,4 +17,5 @@ function dev-check {
 
 function dev-run {
     time php index.php
+    time php index.php --weary
 }
