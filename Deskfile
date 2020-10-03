@@ -16,5 +16,5 @@ function dev-check {
 }
 
 function dev-run {
-    php index.php
+    time php index.php
 }
