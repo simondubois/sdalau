@@ -3,6 +3,7 @@
         "symfony/console": "^5.1"
     },
     "require-dev": {
-        "phpmd/phpmd": "^2.9"
+        "phpmd/phpmd": "^2.9",
+        "squizlabs/php_codesniffer": "^3.5"
     }
 }
