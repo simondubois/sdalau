@@ -22,6 +22,25 @@ class Hand
         }
     }
 
+    public function success(int $target): float
+    {
+        $successes = 0;
+        $tries = 0;
+
+        try {
+            while (true) {
+                if ($this->result() >= $target) {
+                    ++$successes;
+                }
+                ++$tries;
+            }
+        } catch (DiceExhaustedException $exception) {
+            //
+        }
+
+        return $successes / $tries;
+    }
+
     public function result(): int
     {
         return $this->readDicesFromIndex(0);
