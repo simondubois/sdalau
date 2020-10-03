@@ -10,6 +10,7 @@ function dev-install {
 }
 
 function dev-check {
+    phpmd .
 }
 
 function dev-run {
